@@ -14,14 +14,18 @@ Considerando os seguintes ficheiros
 #define LIB_H
 int calculate(const int a, const int b);
 #endif
+```
 
+```C
 // lib.c
 #include "lib.h"
 
 int calculate(const int a, const int b) {
     return a + b;
 }
+```
 
+```C
 // main.c
 #include <stdio.h>
 #include "lib.h"
