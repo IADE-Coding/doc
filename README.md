@@ -1,5 +1,7 @@
 # Desenvolvimento em C
 
+WORK IN PROGRESS!
+
 ## Documentação
 
 - [Linguagem C](c.md)
@@ -9,5 +11,7 @@
 - [git](git.md)
 
 ## Créditos
+
+André Sabino
 
 IADE - Faculdade de Design, Tecnologia e Comunicação, Universidade Europeia
