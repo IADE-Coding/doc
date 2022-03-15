@@ -30,7 +30,9 @@ Por defeito, o git criar um branch `main` para o projeto. O nome `main` é uma c
 
 ## Metodologia
 
-Idealmente existirão dois branches fixos num projeto: `main`^[Tradicionalmente, o nome do *branch*  principal é `master`, mas recentemente tem-se considerado que esse termo tem conotações negativas. A proposta mais comum é utiliar `main`.] e `develop`.
+Idealmente existirão dois branches fixos num projeto: `main`[^master_main] e `develop`.
+
+[^master_main]: Tradicionalmente, o nome do *branch*  principal é `master`, mas recentemente tem-se considerado que esse termo tem conotações negativas. A proposta mais comum é utiliar `main`.
 
 O trabalho deve ser desenvolvido num terceiro branch, que isola a funcionalidade que está a ser acrescentada. Após terminado e testado o trabalho, este terceiro branch deve ser incluído em `develop`. Todas as funcionalidades a implementar devem convergir para `develop`. Só quando todas estiverem implementadas é que `develop` converge para `main`. Na prática, `main` representa sempre uma versão funcional do projeto, e `develop` uma versão em desenvolvimento.
 
@@ -66,7 +68,9 @@ A tabela seguinte ilustra este modelo de organização.
 | `git checkout develop`              |                                      |                            |                            |
 | **Continuar para a próxima versão** |                                      |                            |                            |
 
-Quando vários colaboradores remotos contribuem para o projeto, torna-se necessário incluir um mecanismo de sincronização^[Ver secção sobre [Estratégias de colaboração](#estratégias-de-colaboração).].
+Quando vários colaboradores remotos contribuem para o projeto, torna-se necessário incluir um mecanismo de sincronização[^Colab].
+
+[^Colab]: Ver secção sobre [Estratégias de colaboração](#estratégias-de-colaboração).
 
 ## Resolução de conflitos
 
@@ -82,7 +86,9 @@ Existem duas práticas comuns para suporte à colaboração com repositórios gi
 
 Se existir apenas um repositório remoto, cada colaborador regista o repositório como origin, e faz `checkout push/pull` à medida em que projeto evolui. É uma abordagem mais simples, visto que existe apenas um repositório remoto para configurar, partilhado por todos. Tem a desvantagem de não existir critério quanto a alterações do repositório remoto, o que torna provável ocorrerem conflitos entre código alterado simultaneamente entre colaboradores.
 
-O segundo método determina que cada colaborador tenha o seu repositório remoto. A ideia é existir um repositório remoto inicial do gestor do projeto que todos os colaboradores copiam para si. Esta operação de cópia tem o nome técnico de *fork* ^[Ver secção sobre [GitHub](#github)]. Após o *fork*, os repositórios ficam iguais, cabendo aos colaboradores organizar a hierarquia, se existir. Note-se que cada repositório git é autocontido (i.e., tem toda a informação sobre o projeto), mesmo estando relacionado com outros de alguma forma. É uma boa prática sinalizar o repositório remoto do gestor como upstream do repositório local.
+O segundo método determina que cada colaborador tenha o seu repositório remoto. A ideia é existir um repositório remoto inicial do gestor do projeto que todos os colaboradores copiam para si. Esta operação de cópia tem o nome técnico de *fork*[^GitHub]. Após o *fork*, os repositórios ficam iguais, cabendo aos colaboradores organizar a hierarquia, se existir. Note-se que cada repositório git é autocontido (i.e., tem toda a informação sobre o projeto), mesmo estando relacionado com outros de alguma forma. É uma boa prática sinalizar o repositório remoto do gestor como upstream do repositório local.
+
+[^GitHub]: Ver secção sobre [GitHub](#github).
 
 A segunda alternativa, com vários repositórios remotos é utilizada com maior frequência, porque permite evoluir vários aspetos do projeto sem risco de contaminação da área de trabalho de cada colaborador.
 
