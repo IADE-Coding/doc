@@ -9,7 +9,7 @@ O programa segue um conjunto de regras descritas num ficheiro com o nome `Makefi
 Considerando os seguintes ficheiros
 
 ```C
-// lib.c
+// lib.h
 #ifndef LIB_H
 #define LIB_H
 int calculate(const int a, const int b);
