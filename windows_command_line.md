@@ -6,17 +6,17 @@ A linha de comandos do Windows é acedida através do programa `cmd.exe`.
 
 Da linha de comandos é possível executar programas, e gerir diretórios e ficheiros. A tabela seguinte apresenta alguns operadores mais comuns disponíveis.
 
-| Comando    | Descrição                           |
-| ---------- | ----------------------------------- |
-| `dir`      | Mostrar o conteúdo de um diretório. |
-| `dir /A`   | Incluir diretórios ocultos.         |
+| Comando         | Descrição                           |
+| --------------- | ----------------------------------- |
+| `dir`           | Mostrar o conteúdo de um diretório. |
+| `dir /A`        | Incluir diretórios ocultos.         |
 | `cd nome`       | Navegar para um diretório.          |
-| `cd .`     | Fica no mesmo diretório.            |
-| `cd ..`    | Navega para o diretório anterior.   |
+| `cd .`          | Fica no mesmo diretório.            |
+| `cd ..`         | Navega para o diretório anterior.   |
 | `mkdir nome`    | Criar um diretório.                 |
 | `rmdir nome`    | Remover um diretório.               |
 | `rmdir /S nome` | Remover um diretório com ficheiros. |
-| `cls`      | Limpar o ecrã.                      |
+| `cls`           | Limpar o ecrã.                      |
 | `type nome`     | Mostrar o conteúdo de um ficheiro.  |
 
 Além do conteúdo variável de cada diretório, estes contêm ainda dois diretórios especiais: o ponto (`.`), que é uma referência para si próprio; e os dois pontos (`..`), que é uma referência para o diretório anterior.
@@ -30,4 +30,4 @@ A linha de comandos executa programas que estejam acessíveis através de uma va
 1. Windows + Pause (abre a janela de propriedades do sistema);
 2. Link "Change settings";
 3. Tab superior "Advanced", e Botão "Environment Variables...";
-4. Editar a Path em "User variables" ou "System variables". 
+4. Editar a Path em "User variables" ou "System variables".
